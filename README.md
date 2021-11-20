@@ -3,8 +3,8 @@
 
 _- Jonathan Weinberger, from GameDevHQ._
 
- In this project, I will watch GameDevHQ's tutorial video (https://youtu.be/GoHYSOFiZHc) to learn how to create, save and load serialized data. The code will have many explanatory comments to facilitate its comprehension in case I forget something about it in the future and to teach whoever happens to find this project.
-
+ In this project, I will watch GameDevHQ's tutorial video (https://youtu.be/GoHYSOFiZHc) to learn how to create, save and load serialized data. The code will have many explanatory comments to facilitate its comprehension in case I forget something about it.
+ 
 If you have any interest in learning about this topic or just want a written summary of GameDevHQ's video, feel free to take a look at my notes!
 
 # Roadmap
