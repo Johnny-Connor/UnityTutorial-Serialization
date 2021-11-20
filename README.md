@@ -1,5 +1,5 @@
 # About it
-"Serializing (Saving) and Deserializing (Loading) is performant, secure, and an industry standard."
+_"Serializing (Saving) and Deserializing (Loading) is performant, secure, and an industry standard."_
 
 _- Jonathan Weinberger, from GameDevHQ._
 
