@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour
         player.myStats.Defense = Random.Range(40, 120);
         player.myStats.myPos.x = Random.Range(-4.35f, 4.35f);
         player.myStats.myPos.y = Random.Range(-2.3f, 2.3f);
-        player.myStats.myPos.z = Random.Range(0f, 4f);
+        player.myStats.myPos.z = Random.Range(0f, 3);
     }
 
 }
