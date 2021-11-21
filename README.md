@@ -10,5 +10,5 @@ If you have any interest in learning about this topic or just want a written sum
 # Roadmap
 - [x] Create a scene that randomizes player data.
 - [x] Make the serialization save/load work for both common and Unity exclusive data types.
-- [ ] Optimize the serialization process to match the industry standards.
+- [x] Optimize the serialization process to match the industry standards.
 - [ ] Explain the crucial parts of the code through comments.
