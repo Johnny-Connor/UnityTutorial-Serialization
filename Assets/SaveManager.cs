@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.IO;
+using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public class SaveManager : MonoBehaviour
@@ -15,17 +16,37 @@ public class SaveManager : MonoBehaviour
     public void Save()
     {
         FileStream file = new FileStream(Application.persistentDataPath + "/Player.dat", FileMode.OpenOrCreate);
-        BinaryFormatter formatter = new BinaryFormatter();
-        formatter.Serialize(file, player.myStats);
-        file.Close();
+        try
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(file, player.myStats);
+        }
+        catch (SerializationException error)
+        {
+            Debug.LogError("Error serializing data: " + error.Message);
+        }
+        finally
+        {
+            file.Close();
+        }
     }
 
     public void Load()
     {
         FileStream file = new FileStream(Application.persistentDataPath + "/Player.dat", FileMode.Open);
-        BinaryFormatter formatter = new BinaryFormatter();
-        player.myStats = (Stats) formatter.Deserialize(file); //or "[...] as Stats"
-        file.Close();
+        try
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            player.myStats = (Stats)formatter.Deserialize(file); //or "[...] as Stats"
+        }
+        catch (SerializationException error)
+        {
+            Debug.LogError("Error deserializing data: " + error.Message);
+        }
+        finally
+        {
+            file.Close();
+        }
     }
 
 }
