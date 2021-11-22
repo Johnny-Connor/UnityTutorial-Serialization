@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 
+// Classes must receive the "Serializable" attribute in order to be serialized.
 [System.Serializable]
 public struct SerializableVector3
 {
+
     public float x;
     public float y;
     public float z;
@@ -11,6 +13,7 @@ public struct SerializableVector3
     {
         return new Vector3(x, y, z);
     }
+
 }
 
 [System.Serializable]
