@@ -16,10 +16,14 @@ public class SaveManager : MonoBehaviour
     public void Save()
     {
         // Opens or creates a file, depending if it exists or not.
-        // The first argument is the path. "Application.persistentDataPath" is a dedicated place where Unity stores game data. "Player" will be the name of the file and ".dat" will be its extension (you can name the extension whatever you want, but ".dat" is the industry standard).
-        // The second argument is the action we'll take in the path we've chosen. In this case, we'll open the "Player.dat" file if it already exists or create one if it doesn't.
+        /* The first argument is the path. "Application.persistentDataPath" is a dedicated place where Unity
+         * stores game data. "Player" will be the name of the file and ".dat" will be its extension
+         * (you can name the extension whatever you want, but ".dat" is the industry standard). */
+        /* The second argument is the action we'll take in the path we've chosen. In this case, we'll open the
+         * "Player.dat" file if it already exists or create one if it doesn't. */
         FileStream file = new FileStream(Application.persistentDataPath + "/Player.dat", FileMode.OpenOrCreate);
-        // We're going to use the try-catch-finally blocks to make sure nothing too bad happens in case the serialization process fails.
+        /* We're going to use the try-catch-finally blocks to make sure nothing too bad happens in case the
+         * serialization process fails. */
         try
         {
             // "BinaryFormatter" is a class capable of serializing and deserializing objects.
