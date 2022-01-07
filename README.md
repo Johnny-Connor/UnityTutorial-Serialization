@@ -1,4 +1,5 @@
 # About it
+
 _"Serializing (Saving) and Deserializing (Loading) is performant, secure, and an industry standard."_
 
 _- Jonathan Weinberger, from GameDevHQ._
@@ -8,6 +9,7 @@ _- Jonathan Weinberger, from GameDevHQ._
 If you have any interest in learning about this topic or just want a written summary of GameDevHQ's video, feel free to take a look at my notes too!
 
 # Roadmap
+
 - [x] Create a scene that randomizes player data.
 - [x] Make the serialization save/load work for both common and Unity exclusive data types.
 - [x] Optimize the serialization process to match the industry standards.
