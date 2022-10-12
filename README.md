@@ -1,4 +1,4 @@
-# About it
+# About
 
 _"Serializing (Saving) and Deserializing (Loading) is performant, secure, and an industry standard."_
 
